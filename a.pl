@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-#code by M.Fazri Nizar
+#coded by M.Fazri Nizar
 #no login or valid email required
 
 #use required module
