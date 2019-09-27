@@ -43,7 +43,7 @@ sub main {
         c  => $c,
         d  => $d,
         e  => $e,
-        f   => "",
+        f  => "",
     );
 
     #connect to email
@@ -77,11 +77,11 @@ sub main {
     $h = LWP::UserAgent->new( keep_alive => 1 );
     $h->agent("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.63 Safari/537.31");
     $i = $h->post( $g, { 'xyz' => $f{a}, 
-                                      'zyx' => $f{b}, 
-                                      'xyx' => $f{c}, 
-                                      'zyz' => $f{d},
-                                      'pl'    => $f{e},
-                                      'ypl'  => $f{f}, }
+                         'zyx' => $f{b}, 
+                         'xyx' => $f{c}, 
+                         'zyz' => $f{d},
+                         'pl'  => $f{e},
+                         'ypl' => $f{f}, }
     );
     $j = $i->content;
     $k = $i->code;
